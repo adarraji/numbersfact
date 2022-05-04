@@ -25,7 +25,7 @@ class App extends Component {
     }
 
     onTextChnage = (event) => {
-        console.log(event.target.value);
+        this.setState({ numberText: event.target.value })
     }
 
     componentDidMount() {
