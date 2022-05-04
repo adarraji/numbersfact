@@ -1,6 +1,6 @@
 import React from "react";
 
-const SearchBox = ({ textChnage }) => {
+const TextBox = ({ textChnage }) => {
     return (
         <div>
             <input className="w4 h2" type="search" placeholder="Enter a number" onChange={textChnage} />
@@ -8,4 +8,4 @@ const SearchBox = ({ textChnage }) => {
     );
 }
 
-export default SearchBox;
+export default TextBox;
