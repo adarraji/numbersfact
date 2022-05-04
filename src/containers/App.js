@@ -12,7 +12,7 @@ class App extends Component {
 
     render() {
         return (
-            <div className="georgia f6 white min-vh-100 w-100 flex items-center justify-center">
+            <div className="georgia f6 white min-vh-100 w-100">
                 <div>
                     <SearchBox />
                     <Button />
