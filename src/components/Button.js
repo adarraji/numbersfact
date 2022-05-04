@@ -3,7 +3,7 @@ import React from "react";
 const Button = () => {
     return (
         <div>
-            <button type="submit" value="Submit" />
+            <button type="submit">Submit</button>
         </div>
     );
 }
