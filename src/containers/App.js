@@ -10,7 +10,7 @@ class App extends Component {
 
     render() {
         return (
-            <div className="georgia f6">
+            <div className="georgia f6 white">
                 <Input />
                 <Output />
             </div>
