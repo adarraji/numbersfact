@@ -1,11 +1,14 @@
 import React from "react";
+import SearchBox from "../components/SearchBox";
+import Button from "../components/Button";
 
 const Input = () => {
     return (
         <div>
-            <h1>Input</h1>
+            <SearchBox />
+            <Button />
         </div>
     );
 }
 
-export default Input
+export default Input;
