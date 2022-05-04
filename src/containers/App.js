@@ -9,15 +9,19 @@ class App extends Component {
         this.state = {};
     }
 
-    async getData() {
+    async getData(number) {
         try {
-            const response = await fetch("http://numbersapi.com/42");
+            const response = await fetch(`http://numbersapi.com/${number}`);
             const responseText = await response.text();
             return responseText;
 
         } catch (err) {
             console.log("Error !!!  ", err);
         }
+    }
+
+    componentDidMount() {
+        console.log(this.getData(345));
     }
 
     render() {
