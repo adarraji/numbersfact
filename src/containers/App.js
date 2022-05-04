@@ -10,9 +10,14 @@ class App extends Component {
     }
 
     async getData() {
-        const response = await fetch("http://numbersapi.com/42");
-        const responseText = await response.text();
-        return responseText;
+        try {
+            const response = await fetch("http://numbersapi.com/42");
+            const responseText = await response.text();
+            return responseText;
+
+        } catch (err) {
+            console.log("Error !!!  ", err);
+        }
     }
 
     render() {
