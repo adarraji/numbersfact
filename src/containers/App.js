@@ -24,6 +24,10 @@ class App extends Component {
         console.log("Submit !!!!!!!");
     }
 
+    onTextChnage = (event) => {
+        console.log(event.target.value);
+    }
+
     componentDidMount() {
         console.log(this.getData(345));
     }
@@ -32,7 +36,7 @@ class App extends Component {
         return (
             <div className="georgia f6 white min-vh-100 w-100 flex items-center justify-center">
                 <div>
-                    <Input onSubmit={this.onSubmitClick} />
+                    <Input onSubmit={this.onSubmitClick} textChnage={this.onTextChnage} />
                     <Output />
                 </div>
             </div>
