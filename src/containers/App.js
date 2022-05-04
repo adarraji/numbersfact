@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Input from "./Input";
 
 class App extends Component {
     constructor() {
@@ -9,7 +10,7 @@ class App extends Component {
     render() {
         return (
             <div>
-                <h1>Hello !!!</h1>
+                <Input />
             </div>
         );
     }
