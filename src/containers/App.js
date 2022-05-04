@@ -6,7 +6,7 @@ import Output from "../components/Output";
 class App extends Component {
     constructor() {
         super()
-        this.state = {};
+        this.state = { numberText: "" };
     }
 
     async getData(number) {
