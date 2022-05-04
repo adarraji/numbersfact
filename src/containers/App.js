@@ -9,6 +9,12 @@ class App extends Component {
         this.state = {};
     }
 
+    async getData() {
+        const response = await fetch("http://numbersapi.com/42");
+        const responseText = await response.text();
+        console.log(responseText);
+    }
+
     render() {
         return (
             <div className="georgia f6 white min-vh-100 w-100 flex items-center justify-center">
