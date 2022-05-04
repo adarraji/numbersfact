@@ -12,7 +12,7 @@ class App extends Component {
     async getData() {
         const response = await fetch("http://numbersapi.com/42");
         const responseText = await response.text();
-        console.log(responseText);
+        return responseText;
     }
 
     render() {
