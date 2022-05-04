@@ -2,11 +2,11 @@ import React from "react";
 import SearchBox from "../components/SearchBox";
 import Button from "../components/Button";
 
-const Input = () => {
+const Input = ({ onSubmit }) => {
     return (
         <div className="flex mb3">
             <SearchBox />
-            <Button />
+            <Button onSubmit={onSubmit} />
         </div>
     );
 }

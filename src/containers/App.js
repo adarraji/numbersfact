@@ -20,6 +20,10 @@ class App extends Component {
         }
     }
 
+    onSubmitClick = () => {
+        console.log("Submit !!!!!!!");
+    }
+
     componentDidMount() {
         console.log(this.getData(345));
     }
@@ -28,7 +32,7 @@ class App extends Component {
         return (
             <div className="georgia f6 white min-vh-100 w-100 flex items-center justify-center">
                 <div>
-                    <Input />
+                    <Input onSubmit={this.onSubmitClick} />
                     <Output />
                 </div>
             </div>
