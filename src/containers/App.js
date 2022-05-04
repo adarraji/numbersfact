@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import SearchBox from "../components/SearchBox";
-import Button from "../components/Button";
+import Input from "../components/Input";
 import Output from "../components/Output";
 
 
@@ -14,8 +13,7 @@ class App extends Component {
         return (
             <div className="georgia f6 white min-vh-100 w-100">
                 <div>
-                    <SearchBox />
-                    <Button />
+                    <Input />
                     <Output />
                 </div>
             </div>
