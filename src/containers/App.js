@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import Input from "./Input";
-import Output from "./Output";
+import SearchBox from "../components/SearchBox";
+import Button from "../components/Button";
+import Output from "../components/Output";
+
 
 class App extends Component {
     constructor() {
@@ -11,8 +13,11 @@ class App extends Component {
     render() {
         return (
             <div className="georgia f6 white min-vh-100 w-100 flex items-center justify-center">
-                <Input />
-                <Output />
+                <div>
+                    <SearchBox />
+                    <Button />
+                    <Output />
+                </div>
             </div>
         );
     }
