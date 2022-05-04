@@ -21,7 +21,7 @@ class App extends Component {
     }
 
     onSubmitClick = () => {
-        console.log("Submit !!!!!!!");
+        console.log(this.getData(this.state.numberText));
     }
 
     onTextChnage = (event) => {
