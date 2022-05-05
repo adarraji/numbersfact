@@ -16,7 +16,7 @@ class App extends Component {
         try {
             const response = await fetch(`http://numbersapi.com/${number}`);
             const responseText = await response.text();
-            return responseText;
+            this.setState({ factText: responseText });
 
         } catch (err) {
             console.log("Error !!!  ", err);
@@ -24,7 +24,8 @@ class App extends Component {
     }
 
     onSubmitClick = () => {
-        console.log(this.getData(this.state.numberText));
+        this.getData(this.state.numberText);
+        console.log(this.state.factText);
     }
 
     onTextChnage = (event) => {
@@ -32,7 +33,7 @@ class App extends Component {
     }
 
     componentDidMount() {
-        console.log(this.getData(345));
+        // console.log(this.getData(345));
     }
 
     render() {
