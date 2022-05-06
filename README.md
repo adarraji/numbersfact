@@ -1,5 +1,5 @@
-# React Table
-React web application to test [Numbers API](http://numbersapi.com/).
+# Numbers Fact
+React web application provides interesting fact about numbers. It uses [Numbers API](http://numbersapi.com/) to get the facts.
 
 To run the application
 
@@ -13,4 +13,4 @@ To run the application
 * CSS
 * Javascript
 * React
-* 
+* Tachyons
