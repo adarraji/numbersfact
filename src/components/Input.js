@@ -1,7 +1,7 @@
 import React from "react";
 import TextBox from "./TextBox";
 import Button from "../components/Button";
-import "./App.css";
+
 
 const Input = ({ onSubmit, textChnage }) => {
     return (
