@@ -1,6 +1,8 @@
 # Numbers Fact
 React web application provides interesting facts about numbers. It uses [Numbers API](http://numbersapi.com/) to get the facts.
 
+You can see the website [here](https://numbersfact2.netlify.app/)
+
 To run the application
 
 1. Clone this repo
@@ -14,6 +16,12 @@ To run the application
 * Javascript
 * React
 * Tachyons
+
+## Deployment
+
+Deployed on [Netlify](https://netlify.com)
+
+You can see the website [here](https://numbersfact2.netlify.app/)
 
 ## Authors
 
