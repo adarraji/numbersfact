@@ -12,20 +12,15 @@ class App extends Component {
         };
     }
 
-    async getData(number) {
+    onSubmitClick = async () => {
         try {
-            const response = await fetch(`http://numbersapi.com/${number}`);
+            const response = await fetch(`http://numbersapi.com/${this.state.numberText}`);
             const responseText = await response.text();
             this.setState({ factText: responseText });
 
         } catch (err) {
             console.log("Error !!!  ", err);
         }
-    }
-
-    onSubmitClick = () => {
-        this.getData(this.state.numberText);
-        console.log(this.state.factText);
     }
 
     onTextChnage = (event) => {
