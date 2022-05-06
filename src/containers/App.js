@@ -13,15 +13,22 @@ class App extends Component {
     }
 
     onSubmitClick = async () => {
-        try {
-            const response = await fetch(`http://numbersapi.com/${this.state.numberText}`);
-            const responseText = await response.text();
-            this.setState({ factText: responseText });
+        if (!isNaN(+this.state.numberText)) {
+            try {
+                const response = await fetch(`http://numbersapi.com/${this.state.numberText}`);
+                const responseText = await response.text();
+                this.setState({ factText: responseText });
 
-        } catch (err) {
-            console.log("Error !!!  ", err);
+            } catch (err) {
+                console.log("Error !!!  ", err);
+            }
+        } else {
+            this.setState({ factText: "Enter a valid number" })
         }
+
     }
+
+
 
     onTextChnage = (event) => {
         this.setState({ numberText: event.target.value })
