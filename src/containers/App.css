@@ -12,3 +12,8 @@
     border: none;
     background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(28, 100, 121), rgb(34, 56, 91)) repeat scroll 0% 0%;
 }
+
+.output {
+    min-width: 500px;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(13, 77, 96), rgb(17, 38, 71)) repeat scroll 0% 0%;
+}
