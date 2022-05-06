@@ -15,6 +15,10 @@ To run the application
 * React
 * Tachyons
 
+## Authors
+
+- **Ali Darraji** - [https://github.com/adarraji](https://github.com/adarraji)
+
 ## Screenshots
 
 ![Image 1](./images/image-01.png)
