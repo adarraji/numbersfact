@@ -2,7 +2,7 @@ import React from "react";
 
 const Output = ({ factText }) => {
     return (
-        <div className="mt3 mw5">
+        <div className="m3 mw6 pa3 br3">
             {factText}
         </div>
     );
