@@ -8,7 +8,7 @@ class App extends Component {
         super()
         this.state = {
             numberText: "",
-            factText: "",
+            factText: "Enter a number and I will tell you a fact about the number",
         };
     }
 
@@ -36,7 +36,7 @@ class App extends Component {
             <div className="georgia f6 white min-vh-100 w-100 flex items-center justify-center">
                 <div>
                     <Input onSubmit={this.onSubmitClick} textChnage={this.onTextChnage} />
-                    <Output />
+                    <Output factText={this.state.factText} />
                 </div>
             </div>
         );

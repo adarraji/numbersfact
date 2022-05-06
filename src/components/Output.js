@@ -1,9 +1,9 @@
 import React from "react";
 
-const Output = () => {
+const Output = ({ factText }) => {
     return (
         <div className="mt3">
-            Enter a number and I will tell you a fact about the number
+            {factText}
         </div>
     );
 }
