@@ -4,6 +4,10 @@
 
 .textBox {
     border: none;
-    /* color: white; */
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(28, 100, 121), rgb(34, 56, 91)) repeat scroll 0% 0%;
+}
+
+.button {
+    border: none;
     background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(28, 100, 121), rgb(34, 56, 91)) repeat scroll 0% 0%;
 }
