@@ -14,3 +14,10 @@ To run the application
 * Javascript
 * React
 * Tachyons
+
+## Screenshots
+
+![Image 1](./images/image-01.png)
+
+![Image 2 2](./images/image-02.png)
+
