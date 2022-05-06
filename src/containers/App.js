@@ -28,7 +28,7 @@ class App extends Component {
     }
 
     componentDidMount() {
-        // console.log(this.getData(345));
+
     }
 
     render() {
