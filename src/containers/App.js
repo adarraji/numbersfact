@@ -28,7 +28,7 @@ class App extends Component {
                 this.setState({ factText: responseText });
 
             } catch (err) {
-                const response = fetch(`/api/${this.state.numberText}`);  // This is to correct for HTTP/HTTPS mixing issues during deployment.
+                const response = await fetch(`/api/${this.state.numberText}`);  // This is to correct for HTTP/HTTPS mixing issues during deployment.
                 const responseText = await response.text();
                 this.setState({ factText: responseText });
                 console.log("Error !!!  ", err);
