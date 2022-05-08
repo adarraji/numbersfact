@@ -13,18 +13,22 @@ class App extends Component {
         };
     }
 
+    // Handle Button Click . Fetch Number Trivia
     onSubmitClick = async () => {
+
+        // Verify if the entered text is a number
         if (isNaN(+this.state.numberText) || this.state.numberText === "") {
             this.setState({ factText: "Enter a valid number" });
         }
         else {
             try {
+                // Fetch Number Trivia. Update State.
                 const response = await fetch(`http://numbersapi.com/${this.state.numberText}`);
                 const responseText = await response.text();
                 this.setState({ factText: responseText });
 
             } catch (err) {
-                fetch(`/api/${this.state.numberText}`);
+                fetch(`/api/${this.state.numberText}`);  // This is to correct for HTTP/HTTPS mixing issues during deployment.
                 console.log("Error !!!  ", err);
             }
 
@@ -32,7 +36,7 @@ class App extends Component {
     }
 
 
-
+    // Handel Text Box chnage . Update State.
     onTextChnage = (event) => {
         this.setState({ numberText: event.target.value })
     }
