@@ -24,7 +24,7 @@ class App extends Component {
                 this.setState({ factText: responseText });
 
             } catch (err) {
-                const response = await fetch(`/api/${this.state.numberText}`);
+                fetch(`/api/${this.state.numberText}`);
                 console.log("Error !!!  ", err);
             }
 
