@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Input from "../components/Input";
 import Output from "../components/Output";
+import ErrorBoundry from "../components/ErrorBoundry";
 import "./App.css";
 
 
@@ -52,7 +53,9 @@ class App extends Component {
             <div className="georgia f6 white-90 min-vh-100 w-100 flex items-center justify-center">
                 <div>
                     <Input onSubmit={this.onSubmitClick} textChnage={this.onTextChnage} />
-                    <Output factText={this.state.factText} />
+                    <ErrorBoundry>
+                        <Output factText={this.state.factText} />
+                    </ErrorBoundry>
                 </div>
             </div>
         );
