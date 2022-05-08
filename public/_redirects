@@ -1,1 +1,2 @@
+#redirect /api/ calls to the actual http source because of HTTP/HTTPS mixing issues during deployment
 /api/* http://numbersapi.com/:splat 200
