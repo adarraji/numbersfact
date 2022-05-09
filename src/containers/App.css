@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+html {
+    font-family: 'Nunito', sans-serif;
+}
+
 .input {
     min-width: 500px;
     background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(13, 77, 96), rgb(17, 38, 71)) repeat scroll 0% 0%;
