@@ -52,6 +52,7 @@ class App extends Component {
         return (
             <div className="georgia f6 white-90 min-vh-100 w-100 flex items-center justify-center">
                 <div>
+                    <h1 className="tc">Numbers Facts</h1>
                     <Input onSubmit={this.onSubmitClick} textChnage={this.onTextChnage} />
                     <ErrorBoundry>
                         <Output factText={this.state.factText} />
