@@ -27,6 +27,10 @@ You can see the website [here](https://numbersfact2.netlify.app/)
 
 - **Ali Darraji** - [https://github.com/adarraji](https://github.com/adarraji)
 
+## Deploy status
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/42cfcfc8-6131-4d81-bf1f-ded9174664a7/deploy-status)](https://app.netlify.com/sites/numbersfact2/deploys)
+
 ## Screenshots
 
 ![Image 1](./images/image-01.png)
